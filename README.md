@@ -2,7 +2,7 @@
 
 <img src="public/images/logo.png" alt="Logo R à lunettes" width="96" />
 
-# Rym Ines Bouchama — Portfolio
+# Rym Ines Bouchama : Portfolio
 
 **Ingénieure IA & logiciel · AI & Software Engineer**
 
