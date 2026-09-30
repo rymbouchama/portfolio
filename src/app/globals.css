@@ -1,0 +1,223 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ---------- Design tokens (contrast verified, WCAG AA) ---------- */
+:root {
+  --bg: #f6f7fc;
+  --bg-deep: #eceefa;
+  --surface: #ffffff;
+  --surface-2: #f1f3fb;
+  --border: #e1e4f0;
+  --fg: #0d1130;
+  --muted: #4a5075;
+  --link: #3f4adb;
+  --violet: #6d28d9;
+  --ring: #4b5af0;
+  --grad-from: #5b6bff;
+  --grad-to: #8b5cf6;
+  --btn-from: #4b5af0;
+  --btn-to: #7c3aed;
+  --glow: rgb(91 107 255 / 0.18);
+  --dot: rgb(13 17 48 / 0.07);
+  --rain: 140 152 255;
+  --cover-bg: linear-gradient(135deg, #e7e9ff 0%, #efe7ff 100%);
+}
+
+/* Dark theme, and "ink" sections that stay dark in both themes */
+.dark,
+.ink {
+  --bg: #0a0e1f;
+  --bg-deep: #070a18;
+  --surface: #121735;
+  --surface-2: #171d42;
+  --border: #2a3263;
+  --fg: #e8eaf6;
+  --muted: #a3a9cc;
+  --link: #8c98ff;
+  --violet: #a78bfa;
+  --ring: #8c98ff;
+  --glow: rgb(91 107 255 / 0.28);
+  --dot: rgb(232 234 246 / 0.06);
+  --cover-bg: linear-gradient(135deg, #161c46 0%, #221a4d 100%);
+}
+
+.ink {
+  color-scheme: dark;
+  background-color: var(--bg-deep);
+  color: var(--fg);
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-bg-deep: var(--bg-deep);
+  --color-surface: var(--surface);
+  --color-surface-2: var(--surface-2);
+  --color-line: var(--border);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-link: var(--link);
+  --color-violet: var(--violet);
+  --color-ring: var(--ring);
+  --color-grad-from: var(--grad-from);
+  --color-grad-to: var(--grad-to);
+  --font-heading: var(--font-space-grotesk), ui-sans-serif, system-ui, sans-serif;
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: ui-monospace, "Cascadia Code", Consolas, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  text-wrap: balance;
+  letter-spacing: -0.01em;
+}
+
+:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+::selection {
+  background: rgb(91 107 255 / 0.35);
+}
+
+/* ---------- Utilities ---------- */
+@utility text-gradient {
+  background-image: linear-gradient(90deg, var(--grad-from), var(--grad-to));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.dark .text-gradient,
+.ink .text-gradient {
+  background-image: linear-gradient(90deg, #8c98ff, #b69cfb);
+}
+
+@utility bg-btn {
+  background-image: linear-gradient(135deg, var(--btn-from), var(--btn-to));
+}
+
+@utility bg-cover {
+  background: var(--cover-bg);
+}
+
+@utility dot-grid {
+  background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+@utility card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 1.25rem;
+}
+
+/* Gradient hairline border shown on hover */
+.card-hover {
+  transition: border-color 200ms ease, transform 200ms ease, box-shadow 200ms ease;
+}
+.card-hover:hover {
+  border-color: color-mix(in srgb, var(--grad-from) 55%, var(--border));
+  box-shadow: 0 10px 40px -18px var(--glow);
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .card-hover:hover {
+    transform: translateY(-2px);
+  }
+}
+
+/* ---------- Tech logos: muted by default, brand colour on hover ---------- */
+.logo {
+  color: var(--muted);
+  transition: color 200ms ease;
+}
+.logo:hover,
+.logo:focus-visible {
+  color: var(--brand-light);
+}
+.dark .logo:hover,
+.dark .logo:focus-visible,
+.ink .logo:hover,
+.ink .logo:focus-visible {
+  color: var(--brand-dark);
+}
+
+/* ---------- Marquee ---------- */
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.marquee-track {
+  animation: marquee var(--marquee-duration, 40s) linear infinite;
+}
+.marquee-track[data-reverse="true"] {
+  animation-direction: reverse;
+}
+.marquee:hover .marquee-track,
+.marquee:focus-within .marquee-track {
+  animation-play-state: paused;
+}
+.marquee {
+  mask-image: linear-gradient(90deg, transparent, #000 8%, #000 92%, transparent);
+}
+
+/* ---------- SVG illustrations ---------- */
+@keyframes draw {
+  from { stroke-dashoffset: 1; }
+  to { stroke-dashoffset: 0; }
+}
+@keyframes pop {
+  from { opacity: 0; transform: scale(0.4); }
+  to { opacity: 1; transform: scale(1); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+@keyframes scan {
+  0%, 100% { transform: translateY(-38px); }
+  50% { transform: translateY(38px); }
+}
+.art-draw {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: draw 1.6s ease-out forwards;
+}
+.art-pop {
+  transform-box: fill-box;
+  transform-origin: center;
+  opacity: 0;
+  animation: pop 0.4s ease-out forwards;
+}
+.art-spin {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: spin 24s linear infinite;
+}
+.art-scan {
+  animation: scan 4s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .marquee-track { animation: none; flex-wrap: wrap; justify-content: center; width: 100%; }
+  .marquee-track [data-clone] { display: none; }
+  .marquee { mask-image: none; }
+  .art-draw { animation: none; stroke-dashoffset: 0; }
+  .art-pop { animation: none; opacity: 1; }
+  .art-spin, .art-scan { animation: none; }
+}

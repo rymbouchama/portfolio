@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "title": "Rym Ines Bouchama — AI & Software Engineer",
+    "description": "Portfolio of Rym Ines Bouchama, AI & Software Engineer: multi-agent systems, computer vision, NLP, and web and mobile applications."
+  },
+  "a11y": {
+    "skip": "Skip to main content",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu",
+    "theme": "Toggle between light and dark mode",
+    "language": "Site language",
+    "primaryNav": "Main navigation",
+    "newTab": "(opens in a new tab)",
+    "masked": "Identifying data masked",
+    "palestine": "Watermelon, a symbol of support for Palestine"
+  },
+  "nav": {
+    "about": "Profile",
+    "projects": "Projects",
+    "skills": "Skills",
+    "research": "Research",
+    "journey": "Journey",
+    "contact": "Contact"
+  },
+  "cv": {
+    "download": "Download CV",
+    "short": "CV"
+  },
+  "hero": {
+    "eyebrow": "MSc Data Science & AI · 2026",
+    "hello": "Hi, I'm",
+    "name": "Rym Ines Bouchama",
+    "role": "AI & Software Engineer",
+    "tagline": "Passionate about software development, machine learning and innovation. I build end-to-end AI systems: from sensors and models to web and mobile applications.",
+    "ctaProjects": "View my work",
+    "photoAlt": "Portrait of Rym Ines Bouchama, smiling, wearing a white shirt in front of a green hedge"
+  },
+  "stats": {
+    "title": "Key figures",
+    "items": [
+      { "value": "6", "label": "projects delivered" },
+      { "value": "2", "label": "research works" }
+    ]
+  },
+  "education": {
+    "eyebrow": "Education",
+    "title": "A computer science path, focused on AI",
+    "items": [
+      {
+        "degree": "Master's in Computer Science — Data Science & AI",
+        "school": "Abdelhamid Mehri Constantine 2 University",
+        "date": "June 2026",
+        "note": "Thesis: a collaborative multi-agent framework for real-time multimodal depression monitoring"
+      },
+      {
+        "degree": "Bachelor's in Computer Science",
+        "school": "Abdelhamid Mehri Constantine 2 University",
+        "date": "2021 – 2024",
+        "note": ""
+      }
+    ]
+  },
+  "profile": {
+    "eyebrow": "Profile",
+    "title": "At a glance",
+    "about": {
+      "title": "About",
+      "text": "I'm an AI & Software Engineer with a strong interest in real-world AI applications and emerging technologies. My experience spans technical projects, platform development and organizing international academic events."
+    },
+    "focus": {
+      "title": "Focus areas",
+      "items": ["Deep learning", "Computer vision", "NLP", "Multi-agent systems", "Real-time & embedded"]
+    },
+    "languages": {
+      "title": "Languages",
+      "items": [
+        { "name": "Arabic", "level": "fluent" },
+        { "name": "French", "level": "bilingual" },
+        { "name": "English", "level": "professional" }
+      ]
+    },
+    "research": {
+      "title": "Research",
+      "text": "A Master's thesis on multimodal monitoring and a paper presented at COSI 2026."
+    },
+    "leadership": {
+      "title": "Leadership",
+      "text": "Organizer of the BioVatech international hackathon and former head of IT & Development at the TechWaves ENSB club."
+    }
+  },
+  "featured": {
+    "eyebrow": "Flagship project · Master's thesis · June 2026",
+    "title": "A collaborative multi-agent framework for real-time multimodal depression monitoring",
+    "points": [
+      "Wearable sensors: EEG, head and limb movement, and voice, processed by 4 specialized agents and a fusion orchestrator.",
+      "Two-level stacking model evaluated on a cohort of 30 participants.",
+      "Runs on low-cost embedded hardware, under 50 ms per 3-second window.",
+      "Live clinical dashboard."
+    ],
+    "metrics": [
+      { "value": "0.883", "label": "F1Stab" },
+      { "value": "0.957", "label": "AUC" },
+      { "value": "30", "label": "participants" },
+      { "value": "< 50 ms", "label": "per 3-second window" }
+    ],
+    "disclaimer": "A monitoring system, not a diagnostic tool.",
+    "coverAlt": "Screenshot of the clinical dashboard: live monitoring of EEG, head, limb and voice modalities, with arm and leg sensor signals",
+    "stack": "Tech stack"
+  },
+  "projects": {
+    "eyebrow": "Projects",
+    "title": "More projects",
+    "illustration": "Illustration",
+    "items": {
+      "signLanguage": {
+        "title": "Arabic Sign Language Recognition",
+        "subtitle": "CNN-BiLSTM-Attention",
+        "date": "May 2026",
+        "points": [
+          "Deep learning pipeline for Arabic Sign Language recognition from smartphone videos.",
+          "Designed ST-Maps from hand landmarks and motion features extracted with MediaPipe Hands.",
+          "Research presented at COSI 2026."
+        ],
+        "tags": ["Deep learning", "ST-Maps", "Computer vision"],
+        "alt": "Illustration: a drawn hand with its 21 connected landmarks, over an ST-Map style grid"
+      },
+      "sawtna": {
+        "title": "Sawtna",
+        "subtitle": "AI-powered anti-censorship platform",
+        "date": "Sept 2025",
+        "points": [
+          "AI-powered mobile app helping users share sensitive content while reducing censorship risks.",
+          "Image and text classification pipelines using transformer-based models.",
+          "Automated image filtering and text rewriting workflows.",
+          "Integrated AI image generation APIs within a Flutter application."
+        ],
+        "tags": ["Transformers", "Classification", "Mobile"],
+        "alt": "Sawtna title screen, “The intelligent Palestinian content assistant”",
+        "altInset": "Sawtna mobile screenshot: generating an image from a text prompt"
+      },
+      "captainTrend": {
+        "title": "Captain Trend",
+        "subtitle": "Sports trend analysis platform",
+        "date": "April 2025",
+        "points": [
+          "Real-time sports trend analysis platform using NLP techniques.",
+          "Sentiment analysis and keyword extraction from social media content.",
+          "Dashboards for trend tracking and data visualization."
+        ],
+        "tags": ["NLP", "Sentiment analysis", "Data visualization"],
+        "alt": "Captain Trend screenshot: category selection and featured sports posts, in Arabic"
+      },
+      "mlas": {
+        "title": "MLAS",
+        "subtitle": "Machine Learning Assistance System for Agoraphobia",
+        "date": "Dec 2024",
+        "points": [
+          "Contributed to the design of a machine learning assistance system for agoraphobic individuals.",
+          "Designed modules for real-time monitoring, preprocessing and therapeutic feedback.",
+          "Explored the integration of wearable technologies and virtual reality."
+        ],
+        "tags": ["Real-time", "Wearables", "Virtual reality"],
+        "alt": "MLAS prototype: a smartphone showing a monitoring app, connected to hand-worn sensors"
+      },
+      "dermoscan": {
+        "title": "Dermoscan",
+        "subtitle": "Skin cancer detection application",
+        "date": "June 2024",
+        "points": [
+          "Computer vision application for AI-based skin cancer detection.",
+          "Implemented image preprocessing and classification workflows.",
+          "Designed a simple interface for image capture and prediction."
+        ],
+        "tags": ["Computer vision", "Image classification"],
+        "alt": "Abstract image-analysis illustration: circular scan zone, detection frame and a generic prediction label"
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Skills",
+    "title": "My everyday toolkit",
+    "categories": {
+      "programming": "Programming",
+      "ai": "AI & ML",
+      "web": "Web & Mobile",
+      "data": "Data & tools"
+    }
+  },
+  "research": {
+    "eyebrow": "Research",
+    "title": "Research work",
+    "items": [
+      {
+        "kind": "Master's thesis · 2026",
+        "title": "A collaborative multi-agent framework for real-time multimodal depression monitoring",
+        "text": "Fusing EEG, movement and voice signals through specialized agents, with a two-level stacking model (F1Stab 0.883, AUC 0.957)."
+      },
+      {
+        "kind": "Paper · COSI 2026",
+        "title": "CNN-BiLSTM-Attention for Arabic Sign Language Recognition",
+        "text": "Paper presented at the COSI 2026 conference, on Arabic Sign Language recognition using deep learning.",
+        "imageAlt": "COSI 2026 conference badge (May 12–14) next to a University of Batna 2 pouch"
+      }
+    ]
+  },
+  "journey": {
+    "eyebrow": "Journey",
+    "title": "Year by year",
+    "years": [
+      {
+        "year": "2026",
+        "items": [
+          "Master's in Computer Science, Data Science & AI (June)",
+          "Master's thesis (June)",
+          "Paper presented at COSI 2026 (May)"
+        ]
+      },
+      {
+        "year": "2025",
+        "items": ["Sawtna, anti-censorship platform (Sept)", "Captain Trend, sports trend analysis (April)"]
+      },
+      {
+        "year": "2024",
+        "items": ["Bachelor's in Computer Science", "MLAS, agoraphobia assistance (Dec)", "Dermoscan, skin cancer detection (June)"]
+      },
+      {
+        "year": "2021",
+        "items": ["Started the Bachelor's in Computer Science, Constantine 2 University"]
+      }
+    ]
+  },
+  "leadership": {
+    "eyebrow": "Leadership",
+    "title": "Community involvement",
+    "items": [
+      {
+        "title": "BioVatech",
+        "role": "Organizer of an international hackathon",
+        "text": "Organized the BioVatech international hackathon.",
+        "imageAlt": "BioVatech hackathon website “Bio. Hack. Debug.” shown on a laptop"
+      },
+      {
+        "title": "TechWaves ENSB",
+        "role": "Former head of the IT & Development department",
+        "text": "Former member of the TechWaves club at ENSB Constantine, where I helped organize technology and innovation events and workshops.",
+        "imageAlt": "TechWaves club booth with its logo, a screen and certificates"
+      }
+    ]
+  },
+  "footer": {
+    "eyebrow": "Contact",
+    "title": "Let's talk",
+    "text": "A project, a collaboration or a question? Drop me a line, I'd be happy to hear from you.",
+    "email": "Email",
+    "cvLink": "Download my CV (PDF)",
+    "rights": "All rights reserved.",
+    "top": "Back to top"
+  },
+  "placeholder": "Image coming soon"
+}

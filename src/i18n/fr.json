@@ -1,0 +1,260 @@
+{
+  "meta": {
+    "title": "Rym Ines Bouchama — Ingénieure IA & logiciel",
+    "description": "Portfolio de Rym Ines Bouchama, ingénieure IA & logiciel : systèmes multi-agents, vision par ordinateur, NLP et applications web et mobiles."
+  },
+  "a11y": {
+    "skip": "Aller au contenu principal",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu",
+    "theme": "Basculer entre le mode clair et le mode sombre",
+    "language": "Langue du site",
+    "primaryNav": "Navigation principale",
+    "newTab": "(s'ouvre dans un nouvel onglet)",
+    "masked": "Données identifiantes masquées",
+    "palestine": "Pastèque, symbole de soutien à la Palestine"
+  },
+  "nav": {
+    "about": "Profil",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "research": "Recherche",
+    "journey": "Parcours",
+    "contact": "Contact"
+  },
+  "cv": {
+    "download": "Télécharger mon CV",
+    "short": "CV"
+  },
+  "hero": {
+    "eyebrow": "Master Data Science & IA · 2026",
+    "hello": "Bonjour, je suis",
+    "name": "Rym Ines Bouchama",
+    "role": "Ingénieure IA & logiciel",
+    "tagline": "Passionnée par le développement logiciel, le machine learning et l'innovation. Je conçois des systèmes d'IA de bout en bout : des capteurs et modèles jusqu'aux applications web et mobiles.",
+    "ctaProjects": "Voir mes projets",
+    "photoAlt": "Portrait de Rym Ines Bouchama, souriante, en chemise blanche devant un mur de verdure"
+  },
+  "stats": {
+    "title": "Chiffres clés",
+    "items": [
+      { "value": "6", "label": "projets réalisés" },
+      { "value": "2", "label": "travaux de recherche" }
+    ]
+  },
+  "education": {
+    "eyebrow": "Formation",
+    "title": "Un parcours en informatique, orienté IA",
+    "items": [
+      {
+        "degree": "Master en informatique — option Data Science & IA",
+        "school": "Université Abdelhamid Mehri Constantine 2",
+        "date": "Juin 2026",
+        "note": "Mémoire : cadre multi-agents collaboratif pour le suivi multimodal de la dépression en temps réel"
+      },
+      {
+        "degree": "Licence en science de l'informatique",
+        "school": "Université Abdelhamid Mehri Constantine 2",
+        "date": "2021 – 2024",
+        "note": ""
+      }
+    ]
+  },
+  "profile": {
+    "eyebrow": "Profil",
+    "title": "En quelques blocs",
+    "about": {
+      "title": "À propos",
+      "text": "Ingénieure IA & logiciel, je m'intéresse aux applications concrètes de l'intelligence artificielle et aux technologies émergentes. Mon expérience couvre des projets techniques, le développement de plateformes et l'organisation d'événements académiques internationaux."
+    },
+    "focus": {
+      "title": "Domaines",
+      "items": ["Deep learning", "Vision par ordinateur", "NLP", "Systèmes multi-agents", "Temps réel & embarqué"]
+    },
+    "languages": {
+      "title": "Langues",
+      "items": [
+        { "name": "Arabe", "level": "courant" },
+        { "name": "Français", "level": "bilingue" },
+        { "name": "Anglais", "level": "professionnel" }
+      ]
+    },
+    "research": {
+      "title": "Recherche",
+      "text": "Un mémoire de Master sur le suivi multimodal et un article présenté à COSI 2026."
+    },
+    "leadership": {
+      "title": "Leadership",
+      "text": "Organisatrice du hackathon international BioVatech et ancienne responsable IT & développement du club TechWaves ENSB."
+    }
+  },
+  "featured": {
+    "eyebrow": "Projet phare · Mémoire de Master · Juin 2026",
+    "title": "Cadre multi-agents collaboratif pour le suivi multimodal de la dépression en temps réel",
+    "points": [
+      "Capteurs portables : EEG, mouvements de la tête et des membres, voix, traités par 4 agents spécialisés et un orchestrateur de fusion.",
+      "Modèle de stacking à deux niveaux évalué sur une cohorte de 30 participants.",
+      "Fonctionne sur du matériel embarqué bon marché, en moins de 50 ms par fenêtre de 3 secondes.",
+      "Tableau de bord clinique en direct."
+    ],
+    "metrics": [
+      { "value": "0,883", "label": "F1Stab" },
+      { "value": "0,957", "label": "AUC" },
+      { "value": "30", "label": "participants" },
+      { "value": "< 50 ms", "label": "par fenêtre de 3 s" }
+    ],
+    "disclaimer": "Système de suivi, pas outil de diagnostic.",
+    "coverAlt": "Capture du tableau de bord clinique : suivi en direct des modalités EEG, tête, membres et voix, avec les signaux des capteurs des bras et des jambes",
+    "stack": "Technologies"
+  },
+  "projects": {
+    "eyebrow": "Projets",
+    "title": "Autres projets",
+    "illustration": "Illustration",
+    "items": {
+      "signLanguage": {
+        "title": "Reconnaissance de la langue des signes arabe",
+        "subtitle": "CNN-BiLSTM-Attention",
+        "date": "Mai 2026",
+        "points": [
+          "Pipeline de deep learning pour reconnaître la langue des signes arabe à partir de vidéos de smartphone.",
+          "Conception de ST-Maps à partir des points de repère de la main et de caractéristiques de mouvement extraits avec MediaPipe Hands.",
+          "Recherche présentée à COSI 2026."
+        ],
+        "tags": ["Deep learning", "ST-Maps", "Vision par ordinateur"],
+        "alt": "Illustration : une main dessinée avec ses 21 points de repère reliés, sur une grille de type ST-Map"
+      },
+      "sawtna": {
+        "title": "Sawtna",
+        "subtitle": "Plateforme anti-censure propulsée par l'IA",
+        "date": "Sept. 2025",
+        "points": [
+          "Application mobile d'IA pour aider à partager du contenu sensible en réduisant les risques de censure.",
+          "Pipelines de classification d'images et de textes avec des modèles à base de transformers.",
+          "Filtrage automatique d'images et réécriture de textes.",
+          "Intégration d'API de génération d'images dans une application Flutter."
+        ],
+        "tags": ["Transformers", "Classification", "Mobile"],
+        "alt": "Écran de présentation de Sawtna, « The intelligent Palestinian content assistant »",
+        "altInset": "Capture mobile de Sawtna : écran de génération d'image à partir d'un texte"
+      },
+      "captainTrend": {
+        "title": "Captain Trend",
+        "subtitle": "Plateforme d'analyse des tendances sportives",
+        "date": "Avril 2025",
+        "points": [
+          "Plateforme d'analyse des tendances sportives en temps réel, basée sur le NLP.",
+          "Analyse de sentiment et extraction de mots-clés à partir de contenus des réseaux sociaux.",
+          "Tableaux de bord de suivi des tendances et de visualisation de données."
+        ],
+        "tags": ["NLP", "Analyse de sentiment", "Data visualisation"],
+        "alt": "Capture de Captain Trend : sélection de catégories et publications sportives mises en avant, en arabe"
+      },
+      "mlas": {
+        "title": "MLAS",
+        "subtitle": "Système d'assistance par machine learning pour l'agoraphobie",
+        "date": "Déc. 2024",
+        "points": [
+          "Contribution à la conception d'un système d'assistance par machine learning pour les personnes agoraphobes.",
+          "Modules de suivi en temps réel, de prétraitement et de retour thérapeutique.",
+          "Exploration de l'intégration des technologies portables et de la réalité virtuelle."
+        ],
+        "tags": ["Temps réel", "Capteurs portables", "Réalité virtuelle"],
+        "alt": "Prototype MLAS : un smartphone affiche une application de suivi, relié à des capteurs portés à la main"
+      },
+      "dermoscan": {
+        "title": "Dermoscan",
+        "subtitle": "Application de détection du cancer de la peau",
+        "date": "Juin 2024",
+        "points": [
+          "Application de vision par ordinateur pour la détection du cancer de la peau par IA.",
+          "Workflows de prétraitement et de classification d'images.",
+          "Interface simple de capture d'image et de prédiction."
+        ],
+        "tags": ["Vision par ordinateur", "Classification d'images"],
+        "alt": "Illustration abstraite d'analyse d'image : zone scannée circulaire, cadre de détection et étiquette de prédiction générique"
+      }
+    }
+  },
+  "skills": {
+    "eyebrow": "Compétences",
+    "title": "Mes outils au quotidien",
+    "categories": {
+      "programming": "Programmation",
+      "ai": "IA & ML",
+      "web": "Web & Mobile",
+      "data": "Données & outils"
+    }
+  },
+  "research": {
+    "eyebrow": "Recherche",
+    "title": "Travaux de recherche",
+    "items": [
+      {
+        "kind": "Mémoire de Master · 2026",
+        "title": "Cadre multi-agents collaboratif pour le suivi multimodal de la dépression en temps réel",
+        "text": "Fusion de signaux EEG, de mouvement et de voix par des agents spécialisés, avec un modèle de stacking à deux niveaux (F1Stab 0,883, AUC 0,957)."
+      },
+      {
+        "kind": "Article · COSI 2026",
+        "title": "CNN-BiLSTM-Attention pour la reconnaissance de la langue des signes arabe",
+        "text": "Article présenté à la conférence COSI 2026, portant sur la reconnaissance de la langue des signes arabe par deep learning.",
+        "imageAlt": "Badge de la conférence COSI 2026 (12–14 mai) à côté de la pochette de l'Université de Batna 2"
+      }
+    ]
+  },
+  "journey": {
+    "eyebrow": "Parcours",
+    "title": "Année après année",
+    "years": [
+      {
+        "year": "2026",
+        "items": [
+          "Master en informatique, option Data Science & IA (juin)",
+          "Mémoire de fin d'études (juin)",
+          "Article présenté à COSI 2026 (mai)"
+        ]
+      },
+      {
+        "year": "2025",
+        "items": ["Sawtna, plateforme anti-censure (sept.)", "Captain Trend, analyse des tendances sportives (avril)"]
+      },
+      {
+        "year": "2024",
+        "items": ["Licence en science de l'informatique", "MLAS, assistance pour l'agoraphobie (déc.)", "Dermoscan, détection du cancer de la peau (juin)"]
+      },
+      {
+        "year": "2021",
+        "items": ["Début de la Licence en science de l'informatique, Université Constantine 2"]
+      }
+    ]
+  },
+  "leadership": {
+    "eyebrow": "Leadership",
+    "title": "Engagement associatif",
+    "items": [
+      {
+        "title": "BioVatech",
+        "role": "Organisatrice d'un hackathon international",
+        "text": "Organisation du hackathon international BioVatech.",
+        "imageAlt": "Site du hackathon BioVatech « Bio. Hack. Debug. » affiché sur un ordinateur portable"
+      },
+      {
+        "title": "TechWaves ENSB",
+        "role": "Ancienne responsable du département IT & développement",
+        "text": "Ancienne membre du club TechWaves de l'ENSB Constantine, où j'ai participé à l'organisation d'événements et d'ateliers technologiques.",
+        "imageAlt": "Stand du club TechWaves, avec son logo, un écran et des certificats"
+      }
+    ]
+  },
+  "footer": {
+    "eyebrow": "Contact",
+    "title": "Parlons-en",
+    "text": "Un projet, une collaboration ou une question ? Écrivez-moi, je réponds avec plaisir.",
+    "email": "E-mail",
+    "cvLink": "Télécharger mon CV (PDF)",
+    "rights": "Tous droits réservés.",
+    "top": "Retour en haut"
+  },
+  "placeholder": "Image à venir"
+}
